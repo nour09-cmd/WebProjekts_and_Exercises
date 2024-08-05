@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+:root {
+  font-size: 70%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+header > img.he {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+header img.dev {
+  width: 200px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+header h2 {
+  font-size: 3.5rem;
+  color: orange;
+  text-shadow: 3px 3px 5px black;
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+nav {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+}
+nav div:nth-child(1) {
+  float: left;
+}
+nav div:nth-child(2) {
+  float: right;
+}
+nav a {
+  font-size: 1.6rem;
+  color: #d5d5d5;
+  margin: 0 15px;
+  line-height: 70px;
+}
+
+nav a:hover {
+  color: rgb(66, 66, 66);
+}
+
+.grid1 {
+  padding: 2% 10%;
+}
+h2 {
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: justify;
+}
+div {
+  display: block;
+}
+.g_in {
+  width: 50%;
+  height: 100%;
+  border-right: 1px solid #d5d5d5;
+}
+.g_in > div {
+  width: 70%;
+  height: 200px;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid #00c1fc;
+}
+.g_in > div:nth-child(even) {
+  position: relative;
+  left: 100%;
+  border: 1px solid #fc6100;
+}
+/* from https://hsnakk.github.io/UIB_Layout_Position_Exercise-1/ */
+.g_in > div:nth-child(odd)::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #00c1fc;
+  display: inline-block;
+  position: relative;
+  left: 127%;
+  bottom: 30px;
+}
+/* from https://hsnakk.github.io/UIB_Layout_Position_Exercise-1/ */
+
+.g_in > div:nth-child(even)::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fc6100;
+  display: inline-block;
+  position: relative;
+  left: -34%;
+  top: -30%;
+}
+.grid2 {
+  padding: 2% 10%;
+  height: 440px;
+}
+.grid2 div {
+  width: 515px;
+  height: 260px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  position: absolute;
+  z-index: 5;
+}
+.d2_1 {
+  top: 0;
+  left: 0;
+  background: orange;
+}
+.d2_2 {
+  top: 40px;
+  left: 260px;
+  background: #8deee0;
+}
+.d2_3 {
+  top: 79px;
+  left: 555px;
+  background: #d696f1;
+}
+.grid2 div:hover {
+  z-index: 10;
+}
+
+footer {
+  background-color: black;
+  padding: 30px;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}

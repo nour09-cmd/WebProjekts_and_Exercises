@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: grid;
+  grid-template:
+    "header header header header"
+    "main main main asideone"
+    "asidetwo section section asideone"
+    "footer footer footer footer";
+  gap: 0.5rem;
+}
+
+header {
+  border-radius: 10px;
+  height: 10vh;
+  grid-area: header;
+  background: bisque;
+  display: flex;
+  justify-content: space-between;
+}
+
+header > * {
+  flex-grow: 1;
+}
+nav {
+  background: rgba(128, 128, 128, 0.185);
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.aside1 {
+  background: lightgreen;
+  grid-area: aside1;
+}
+.aside2 {
+  background: lightgreen;
+  grid-area: aside2;
+}
+main {
+  padding: 15px;
+  border-radius: 10px;
+  grid-area: main;
+  background-color: bisque;
+  height: 50vh;
+}
+
+.a1 {
+  padding: 15px;
+  border-radius: 10px;
+  grid-area: asideone;
+  background-color: rgb(255, 158, 47);
+}
+
+.a2 {
+  padding: 15px;
+  border-radius: 10px;
+  grid-area: asidetwo;
+  background-color: greenyellow;
+  height: 25vh;
+}
+section {
+  padding: 15px;
+  border-radius: 10px;
+  grid-area: section;
+  background-color: palevioletred;
+  height: 25vh;
+}
+footer {
+  padding: 15px;
+  border-radius: 10px;
+  grid-area: footer;
+  background-color: antiquewhite;
+  height: 10vh;
+}

@@ -1,0 +1,53 @@
+/* Original styles - don't edit these! */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: initial;
+}
+:root {
+  font-size: 95%;
+}
+body {
+  background-color: #333;
+}
+.bg1 {
+  background: url(bg1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg2 {
+  background: url(bg2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Add your styles below here*/
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-auto-rows: 350px;
+  gap: 0.5rem;
+}
+
+.bg2,
+.bg1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.bg1 *,
+.bg2 * {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  margin: 3px;
+  color: #eee;
+}
+
+.container div:hover {
+  box-shadow: inset 3px 2px 15px black;
+  font-size: 2rem;
+}

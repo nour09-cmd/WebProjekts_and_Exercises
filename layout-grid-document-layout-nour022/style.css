@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0%;
+  font-family: initial;
+  display: grid;
+  grid-template: "header header header header " "main main main main" "section section section section" "footer footer footer footer";
+}
+
+header {
+  grid-area: header;
+  background-color: #d5d5d5;
+  padding: 0% 10%;
+  /* height: 10vh; */
+}
+
+header > nav > ul {
+  list-style-type: none;
+  display: flex;
+  margin-top: 15px;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+header > nav > ul > li {
+  padding: 20px;
+}
+header > nav > ul > li > a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: rgb(46, 45, 45);
+  width: 100%;
+  height: 100%;
+}
+header > nav > ul > li > a:hover {
+  padding: 30px;
+  background-color: white;
+  color: black;
+}
+/* ende header */
+
+main {
+  grid-area: main;
+  padding: 0% 10%;
+}
+main > div {
+  background-size: cover;
+}
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px 90px 25px 25px 100px 100px 80px;
+  gap: 1rem;
+}
+.grid1 > div {
+  background-repeat: no-repeat;
+}
+.img {
+  grid-area: 1/1/2/2;
+  background-image: url(images/1.jpg);
+}
+.img1 {
+  grid-area: 1/2/3/3;
+  background-image: url(images/2.jpg);
+}
+.img2 {
+  grid-area: 1/3/5/3;
+  background-image: url(images/3.jpg);
+}
+.img3 {
+  grid-area: 1/4/4/5;
+  background-image: url(images/4.jpg);
+}
+.img4 {
+  grid-area: 2/1/6/1;
+  background-image: url(images/5.jpg);
+}
+.img5 {
+  grid-area: 3/2/7/3;
+  background-image: url(images/6.jpg);
+}
+.img6 {
+  grid-area: 5/3/8/3;
+  background-image: url(images/7.jpg);
+}
+.img7 {
+  grid-area: 4/4/8/4;
+  background-image: url(images/8.jpg);
+}
+.img8 {
+  grid-area: 6/1/8/2;
+  background-image: url(images/9.jpg);
+}
+.img9 {
+  grid-area: 7/2/8/3;
+  background-image: url(images/10.jpg);
+}
+
+section {
+  grid-area: section;
+  padding: 0% 10%;
+  display: grid;
+  grid-template: "a b c" ". d e" ". . f";
+}
+section > div {
+  font-size: 2rem;
+  font-weight: 100;
+  text-align: center;
+  line-height: 200px;
+  text-shadow: 2px 2px 5px black;
+}
+.a {
+  grid-area: a;
+  background-color: purple;
+}
+.b {
+  grid-area: b;
+  border-color: aqua;
+}
+.c {
+  grid-area: c;
+  background-color: blue;
+}
+.d {
+  grid-area: d;
+  background-color: yellowgreen;
+}
+.e {
+  grid-area: e;
+  background-color: teal;
+}
+.f {
+  grid-area: f;
+  background-color: navy;
+}
+footer {
+  grid-area: footer;
+  background-color: gray;
+  padding: 10px 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+footer > div {
+  padding: 30px;
+  margin: 10px;
+  border-radius: 15px;
+  color: whitesmoke;
+  box-shadow: 1px 1px 5px white;
+}
